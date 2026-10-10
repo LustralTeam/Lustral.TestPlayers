@@ -6,16 +6,18 @@ players are minimal Unity games made by LustralTeam; they contain no mods and no
 
 ## Releases
 
-Each release, named by its date, contains one zip per player and `players.json`:
+Each release contains the players of one Unity version, built on one date, and is named after both, such as
+`6000.6.5f1-2026-10-10`:
 
 | File | Content |
 | --- | --- |
-| `<unity version>-<platform>.zip` | The player, extracted to `<unity version>/<platform>/` |
-| `players.json` | The release, and each player's Unity version, platform, file name, size and SHA-256 hash |
+| `<platform>.zip` | The player, extracted to `<unity version>/<platform>/` |
+| `players.json` | The release, the Unity version, and each platform's file name, size and SHA-256 hash |
 
 Platforms are named as Lustral's release packages: `win-x64-mono` and `win-x64-il2cpp`, and `win-x64-mono-legacy` for a
-Unity 2018 player that uses the legacy .NET 3.5 scripting runtime. Lustral names the release it tests against in its
-`tests/testplayers.json`, and `tools/get-testplayers.ps1` downloads it.
+Unity 2018 player that uses the legacy .NET 3.5 scripting runtime. Releases are never replaced: rebuilt players are
+published as new releases. Lustral lists the releases it tests against in its `tests/testplayers.json`, and
+`tools/get-testplayers.ps1` downloads them.
 
 ## Unity Versions
 
