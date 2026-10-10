@@ -1,5 +1,11 @@
 # LF everywhere (Linux support is on the roadmap); Windows-only formats keep CRLF.
 * text=auto eol=lf
 *.sln text eol=crlf
-*.{cmd,bat} text eol=crlf
-*.{png,jpg,ico,dll,exe,zip} binary
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.png binary
+*.jpg binary
+*.ico binary
+*.dll binary
+*.exe binary
+*.zip binary
